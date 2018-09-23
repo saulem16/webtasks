@@ -1,0 +1,121 @@
+<html>
+<head>
+  <style>
+   .menu {
+      : green;
+     font-size: 18px;
+     margin-left: 10px ;
+   }
+   .menu a{
+     color: green;
+   }
+    .item{
+      display: flex;
+      border-radius: 15px;
+      border:1px solid red;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center;
+      margin: 10px;
+      justify-content: stretch;
+      height: 120px;
+      align-items: center;
+    }
+    .item img{
+      margin-top: 25;
+      width: 115px;
+      height: 95px;
+      margin: 5px ;
+
+    }
+    .urgent{
+      background-color: yellow;
+    }
+    .title a{
+      font-size: 35px;
+    }
+    .text_for{
+      margin: 10px;
+      font-size: 20px;
+    }
+    .price{
+      background-color: pink;
+      font-size: 25px;
+      color: green;
+    }
+    .description{
+      display: flex;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    .attributes{
+      font-size: 17px;
+      margin-top: 5px;
+    }
+    .attributes .city {
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+<div class="menu">
+  <a href="cars.html">Cars</a> | <a href="moto.html">Moto</a> | <a href="trucks.html">Trucks</a>
+</div>
+
+<div class="item">
+  <img src="https://media.ed.edmunds-media.com/bmw/x5/2013/oem/2013_bmw_x5_4dr-suv_xdrive35d_fq_oem_1_1280.jpg" class="image" width="95px" height="75"/>
+  <div class="main_body">
+    <div class="title">
+      <a href="#">BMW X5 Series</a>
+      <span class="text_for"> <b>for</b></span>
+      <span class="price">30.000$</span>
+    </div>
+
+    <div class="description">
+      Good car in good conditions
+    </div>
+    <div class="attributes">
+      City: <span class="city">Aktobe</span>, Type: Sedan, 4xWD
+    </div>
+  </div>
+</div>
+
+
+<div class="item urgent">
+  <img src="https://files2.porsche.com/filestore/image/multimedia/none/jdp-2016-9pa-e2-2nd-v6-editorial-xl/normal/944b5c81-8fc8-11e6-9f1b-0019999cd470;sJ/porsche-normal.jpg" class="image"/>
+  <div class="main_body">
+    <div class="title">
+      <a href="#">Porsche Cayenne</a>
+      <span class="text_for"><b>for</b></span>
+      <span class="price">30.000$</span>
+    </div>
+
+    <div class="description">
+      The best car of all cars
+    </div>
+    <div class="attributes">
+      City: <span class="city">Almaty</span>, Type: Hatchback, 2xWD
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Audi_A8_2013_%2811209853445%29.jpg/300px-Audi_A8_2013_%2811209853445%29.jpg" class="image" width="100px"/>
+  <div class="main_body">
+    <div class="title">
+      <a href="#">Audi A8</a>
+      <span class="text_for"><b>for</b></span>
+      <span class="price">18.000$</span>
+    </div>
+
+    <div class="description">
+      Good car in good conditions
+    </div>
+    <div class="attributes">
+      City: <span class="city">Astana</span>, Type: Sedan, 2xWD
+    </div>
+  </div>
+</div>
+</body>
+</html>
