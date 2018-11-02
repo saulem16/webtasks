@@ -1,0 +1,72 @@
+<html>
+<head>
+  <style>
+    #news{
+      border:1px solid red;
+      width:400px;
+      height:300px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="news"></div>
+<button id="sport">Load Sport news</button>
+<button id="politics">Load Politics news</button>
+<button id="bussiness">Load Bussiness news</button>
+
+
+<script>
+  var urls;
+  function onTextReady(text) {
+
+    urls = text.split('\n');
+    for (const url of urls) {
+      const txt = new text();
+      document.getElementById("news").innerText ;
+      NEWS.append()
+     // document.body.append(image);
+    }
+  }
+  function onTextReady2(text) {
+
+    console.log(text);
+    document.getElementById("news").innerHTML = text;
+        //NEWS.append()
+      // document.body.append(image);
+
+  }
+  function onResponse(response) {
+    return response.text();
+  }
+  fetch('text.txt')
+    .then(onResponse)
+    .then(onTextReady);
+
+  function bt1(){
+    fetch(urls[2])
+      .then(onResponse)
+      .then(onTextReady2);
+  }
+
+  function bt2(){
+    fetch(urls[1])
+      .then(onResponse)
+      .then(onTextReady2);
+  }
+
+  function bt3(){
+    fetch(urls[0])
+      .then(onResponse)
+      .then(onTextReady2);
+  }
+ ;
+  const btn1 = document.querySelector('#sport');
+  btn1.addEventListener('click', bt1)
+  const btn2 = document.querySelector('#politics');
+  btn2.addEventListener('click', bt2)
+  const btn3 = document.querySelector('#bussiness');
+  btn3.addEventListener('click', bt3)
+</script>
+</body>
+</html>
